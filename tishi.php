@@ -16,7 +16,7 @@ session_start();
 
     <h1>注册成功！</h1>
     <p>3秒后自动跳转到登录页面...</p>
-    <p><a href="login.html">如果没有跳转，请点击这里</a></p>
+    <p><a href="index.html">如果没有跳转，请点击这里</a></p>
 
 </body>
 </html>
