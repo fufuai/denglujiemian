@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     ];
 
     // 在注册成功之前先进行跳转
-    header("Location: denglu.html"); // 跳转到登录页面
+    header("Location: login.html"); // 跳转到登录页面
     exit(); // 确保代码结束后不会继续执行
 
 } else {
