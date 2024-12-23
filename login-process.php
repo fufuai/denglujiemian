@@ -12,14 +12,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // 检查输入字段是否为空
     if (empty($username) || empty($password)) {
         echo "用户名或密码不能为空！<br>";
+<<<<<<< HEAD
         echo '<a href="denglu.html">返回登录页面</a>';
+=======
+        echo '<a href="index.html">返回登录页面</a>';
+>>>>>>> 558ed135b732957129e52bccad2fa174b2ec5208
         exit();
     }
 
     // 检查用户名是否存在
     if (!isset($_SESSION['users'][$username])) {
         echo "用户名不存在！<br>";
+<<<<<<< HEAD
         echo '<a href="denglu.html">返回登录页面</a>';
+=======
+        echo '<a href="index.html">返回登录页面</a>';
+>>>>>>> 558ed135b732957129e52bccad2fa174b2ec5208
         exit();
     }
 
@@ -29,7 +37,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // 检查密码是否正确
     if (!password_verify($password, $user['password'])) {
         echo "密码错误！<br>";
+<<<<<<< HEAD
         echo '<a href="denglu.html">返回登录页面</a>';
+=======
+        echo '<a href="index.html">返回登录页面</a>';
+>>>>>>> 558ed135b732957129e52bccad2fa174b2ec5208
         exit();
     }
 
@@ -40,7 +52,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 } else {
     // 非POST请求，显示错误信息
     echo "无效的请求方式！<br>";
+<<<<<<< HEAD
     echo '<a href="denglu.html">返回登录页面</a>';
+=======
+    echo '<a href="index.html">返回登录页面</a>';
+>>>>>>> 558ed135b732957129e52bccad2fa174b2ec5208
     exit();
 }
 ?>
